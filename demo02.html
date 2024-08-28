@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lession1</title>
+</head>
+<body>
+  <h1>Homework</h1>
+  <button onclick="calculateFactorial(5)" >Excersite 1</button>
+  <p id ="result1"></p>
+  <button onclick="reverseString('Hello,World')" >Excersite 2</button>
+  <p id ="result2"></p>
+  <button onclick="translateHello('VN')">Exercise 3</button>
+  <p id="result3"></p>
+  <button onclick="subStrings('xinchaocacbandenvoiTechmaster')">Exercise 4</button>
+  <p id="result4"></p>
+</body>
+
+<script>
+  function calculateFactorial(n) {
+    let result = 1;
+    if (n < 0) {
+      alert("Invalid input");
+    } else if (n === 0 || n === 1) {
+      result = 1;
+  } else {
+    for (let i = 2; i <= n; i++) {
+      result *= i;
+    }
+  }
+  document.getElementById("result1").innerHTML = `Factorial of ${n} is ${result}`;
+  }
+</script>
+
+<script>
+  function reverseString(s) {
+    let result = "";
+    for (let i = s.length - 1; i >= 0; i--) {
+        result += s.charAt(i);
+    }
+    document.getElementById("result2").innerHTML = `Reversed string: ${result}`;
+  }
+</script>
+
+<script>
+  function  translateHello(s) {
+  let result ="";
+  switch(s) {
+    case "VN":
+      result ="Xin chao";
+      break;
+    case "EN":
+      result = "Hello";
+      break;
+      case "FR":
+        result = "Bonjour";
+        break;
+    default:
+      result = "nihao";
+  }
+
+  document.getElementById("result3").innerHTML = `translate : ${result}`;
+}
+</script>
+
+<script>
+  function subStrings(s) {
+    document.getElementById("result4").innerHTML = `translate : ${s.substring(0,10)+"..."}`;
+
+  }
+</script>
+
+</html>
