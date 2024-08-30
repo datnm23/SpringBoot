@@ -4,8 +4,15 @@ const result = findClosestPrime(numbers, X);
 console.log(result)
 console.log("_________________________________")
 
-const result4 = findSecondLargest(numbers);
-console.log(result4)
+console.log(findValidNumbers1())
+
+console.log("_________________________________")
+
+console.log(findValidNumbers2())
+
+console.log("_________________________________")
+
+console.log(findSecondLargest(numbers))
 
 console.log("_________________________________")
 
@@ -62,11 +69,13 @@ function checkNumberContains(num) {
 }
 
 function findValidNumbers1() {
+  let result = [];
   for (let i = 10000; i <= 9999999; i++) {
     if (isPrime(i) && isReversibleNumber(i) && checkNumberContains(i)) {
-      console.log(i)
+      result.push(i);
     }
   }
+  return result;
 }
 
 function checkDigitsPrime(num) {
@@ -81,11 +90,13 @@ function checkDigitsPrime(num) {
 }
 
 function findValidNumbers2() {
+  let result = [];
   for (let i = 1000000; i <= 9999999; i++) {
     if (isPrime(i) && checkDigitsPrime(i) && (isPrime(reversibleNumber(i)))) {
-      console.log(i)
+      result.push(i);
     }
   }
+  return result;
 }
 
 function findSecondLargest(arr) {
@@ -112,8 +123,8 @@ function findSecondLargest(arr) {
   if (secondMax === null) {
       return ("There is no second largest number");
   }
-  return {
-    secondLargest: secondMax,
-    index: secondMaxIndex
-};
+
+  let result = []
+  result.push(secondMax,secondMaxIndex)
+  return result;
 }
