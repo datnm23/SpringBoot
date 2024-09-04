@@ -50,7 +50,7 @@ for (let i = 0; i < words.length; i++) {
   const link = document.createElement("a");
   link.href = "https://www.facebook.com";
   link.innerText = "facebook";
-  paragraph1.parentNode.insertBefore(link, paragraph1.nextSibling);
+  paragraph1.insertAdjacentElement("afterend", link);
   
   // 3
   const paragraph3 = document.getElementsByTagName("p")[0];
