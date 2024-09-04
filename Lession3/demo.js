@@ -60,3 +60,10 @@ for (let i = 0; i < words.length; i++) {
 
   divCount.innerText = `Số từ trong đoạn văn: ${wordCount}`;
   document.body.appendChild(divCount);
+
+  //4
+  const paragraph4 = document.getElementsByTagName("p")[0];
+  let text = paragraph4.innerText;
+
+  text = text.replace(/,/g, '🤔').replace(/\./g, '😲');
+  paragraph4.innerText = text
