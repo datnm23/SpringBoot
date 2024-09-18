@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="demo06.css" rel="stylesheet"/>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="demo06.js"></script>
+<body>
+  <h1 class="title">Student form</h1>
+    <div class="form">
+        <form>
+            <div class="form-group">
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="name" />
+                </div>
+                <span class="error">Tên không hợp lệ</span>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label>Birth day:</label>
+                    <input type="date" id="dob" />
+                </div>
+                <span class="error">Ngày sinh không hợp lệ</span>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label>Phone:</label>
+                    <input type="text" id="phone" />
+                </div>
+                <span class="error">SDT không hợp lệ</span>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label>Home town:</label>
+                    <input type="text" id="home-town" />
+                </div>
+                <span class="error">Quê quán không hợp lệ</span>
+            </div>
+
+            <div class="btn-block">
+                <button type="button" id="save-btn">Save</button>
+                <button type="button" id="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="table-actions">
+        <button type="button" id="edit-btn" disabled>Edit</button>
+        <button type="button" id="delete-btn" disabled>Delete</button>
+    </div>
+
+
+    <div class="data-table">
+        <table>
+            <thead>
+                <th class="checkbox-col"></th>
+                <th>Name</th>
+                <th>Birthday</th>
+                <th>Phone</th>
+                <th>Hometown</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox" /></td>
+                    <td>DEMO</td>
+                    <td>20/12/1995</td>
+                    <td>0987654321</td>
+                    <td>Hanoi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
