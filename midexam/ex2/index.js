@@ -17,7 +17,7 @@ const quizes = [
 ];
 
 function renderQuiz() {
-  const quizContainer = document.getElementById('quiz-container');
+  const quizContainer = document.getElementsByClassName('quiz-container')[0];
   quizContainer.innerHTML = '';
 
   for (let i = 0; i < quizes.length; i++) {

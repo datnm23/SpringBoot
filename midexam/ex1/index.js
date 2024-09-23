@@ -59,8 +59,23 @@ function getUsersSortedByAge(usersArray) {
   });
 }
 
-const usersSortedByAgeDesc = sortUsersByAgeDescending(users);
+const usersSortedByAgeDesc = getUsersSortedByAge(users);
 console.log("Các user được sắp xếp theo age giảm dần:");
 console.log(usersSortedByAgeDesc);
 
 // Bài 3
+function getCountElement(arr) {
+  const counts = {};
+  for (var i = 0; i < arr.length; i++) {
+      const element = arr[i];
+      if (counts[element]) {
+          counts[element] += 1;
+      } else {
+          counts[element] = 1;
+      }
+  }
+  return counts;
+}
+
+const result3 = getCountElement(["one", "two", "three", "one", "one", "three"]);
+console.log(result3);
