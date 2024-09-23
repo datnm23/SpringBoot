@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm tra Javascript cơ bản</title>
+</head>
+<body>
+  <h1>1. Kiểm tra Javascript cơ bản</h1>
+  <h2>Bài 1: Tìm chuỗi có độ dài lớn nhất</h2>
+  <p>
+    Viết function truyền vào mảng các chuỗi có độ dài bất kỳ. 
+    Kết quả trả về là 1 mảng các chuỗi có độ dài lớn nhất.
+  </p>
+  <p>
+    Ví dụ: <code>getStringsWithMaxLength(['aba', 'aa', 'ad', 'c', 'vcd'])</code> sẽ trả về <code>['aba', 'vcd']</code>.
+  </p>
+
+  <h2>Bài 2: Xử lý mảng users</h2>
+
+  <p>Cho mảng users như sau:</p>
+  
+  <pre><code>users = [
+      {
+          name: "Bùi Công Sơn",
+          age: 30,
+          isStatus: true
+      },
+      {
+          name: "Nguyễn Thu Hằng",
+          age: 27,
+          isStatus: false
+      },
+      {
+          name: "Phạm Văn Dũng",
+          age: 20,
+          isStatus: false
+      }
+  ]</code></pre>
+  
+  <p>Yêu cầu:</p>
+  <ol>
+    <li>Viết function truyền vào 1 mảng các object user. Trả về mảng các user có age > 25 và isStatus = true</li>
+    <li>Viết function truyền vào 1 mảng các object user. Trả về mảng các user có age tăng dần</li>
+  </ol>
+
+  <h2>Bài 3: Đếm số lần xuất hiện của các phần tử trong mảng</h2>
+
+  <p>Viết function truyền vào 1 mảng các chuỗi. Trả về Object hiển thị xem mỗi phần tử trong mảng xuất hiện bao nhiêu lần.</p>
+  
+  <h3>Ví dụ:</h3>
+  
+  <pre><code>getCountElement(["one", "two", "three", "one", "one", "three"])</code></pre>
+  
+  
+  <pre><code>{
+      one: 3,
+      two: 1,
+      three: 2
+  }</code></pre>
+</body>
+<script src="index.js"></script>
+</html>
