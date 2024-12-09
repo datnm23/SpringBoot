@@ -1,0 +1,14 @@
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+# This configuration file will hold common configs to be shared among all files
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka/
+  # where our registry server is located
+  instance:
+    prefer-ip-address: true
+    # when the application registers with eureka, true: it uses its IP address rather than its hostname

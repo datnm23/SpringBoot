@@ -1,0 +1,20 @@
+server:
+  port: 9083
+  servlet:
+    context-path: /
+
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: datnm1594@gmail.com
+    password: corb ubog lluv jdtx
+    port: 587
+    protocol: smtp
+    test-connection: false
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

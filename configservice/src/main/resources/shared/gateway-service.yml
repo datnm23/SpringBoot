@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      default-filters:
+        - StripPrefix=1
+      routes:
+        - id: user-route
+          uri: lb://account-service
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1
+            - Logging
+        - id: report-route
+          uri: lb://statistic-service
+          predicates:
+            - Path=/report/**
+          filters:
+            - StripPrefix=1
+        - id: notification-route
+          uri: lb://notification-service
+          predicates:
+            - Path=/notification/**
+          filters:
+            - StripPrefix=1
+        - id: openapi
+          uri: lb://gateway-service
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<service>.*), /${service}/v3/api-docs
