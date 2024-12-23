@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.github.datnm23</groupId>
-	<artifactId>uIservice</artifactId>
+	<artifactId>uiservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>UIservice</name>
 	<description>UIservice</description>
