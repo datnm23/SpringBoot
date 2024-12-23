@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="UIservice" />
+        <module name="uIservice" />
         <module name="discoveryservice" />
         <module name="configservice" />
         <module name="accountservice" />
@@ -34,7 +34,6 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="UIservice" options="-parameters" />
       <module name="accountservice" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="configservice" options="-parameters" />
@@ -45,6 +44,7 @@
       <module name="notificationservice" options="-parameters" />
       <module name="securityservice" options="-parameters" />
       <module name="statisticservice" options="-parameters" />
+      <module name="uIservice" options="-parameters" />
     </option>
   </component>
 </project>
