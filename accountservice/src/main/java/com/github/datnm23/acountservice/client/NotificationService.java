@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "notification-service", url = "http://localhost:9083", fallback = NotificationServiceImpl.class)
+@FeignClient(name = "notification-service", fallback = NotificationServiceImpl.class)
 
 public interface NotificationService {
 

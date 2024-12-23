@@ -6,7 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="UIservice" />
+        <module name="discoveryservice" />
+        <module name="configservice" />
         <module name="accountservice" />
+        <module name="securityservice" />
+        <module name="gatewayservice" />
+        <module name="eurekaservice" />
+      </profile>
+      <profile name="Annotation profile for courseservice" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="statisticservice" />
+        <module name="courseservice" />
+        <module name="notificationservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,8 +34,17 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="UIservice" options="-parameters" />
       <module name="accountservice" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
+      <module name="configservice" options="-parameters" />
+      <module name="courseservice" options="-parameters" />
+      <module name="discoveryservice" options="-parameters" />
+      <module name="eurekaservice" options="-parameters" />
+      <module name="gatewayservice" options="-parameters" />
+      <module name="notificationservice" options="-parameters" />
+      <module name="securityservice" options="-parameters" />
+      <module name="statisticservice" options="-parameters" />
     </option>
   </component>
 </project>

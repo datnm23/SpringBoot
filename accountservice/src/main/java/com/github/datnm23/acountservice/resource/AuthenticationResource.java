@@ -17,7 +17,6 @@ import com.github.datnm23.acountservice.model.request.RefreshTokenRequest;
 import com.github.datnm23.acountservice.model.request.RegistrationRequest;
 import com.github.datnm23.acountservice.model.response.JwtResponse;
 import com.github.datnm23.acountservice.model.response.UserResponse;
-import com.github.datnm23.acountservice.service.AuthenticationService;
 
 @CrossOrigin
 @RestController

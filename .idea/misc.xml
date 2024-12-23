@@ -7,6 +7,16 @@
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/user_service/pom.xml" />
         <option value="$PROJECT_DIR$/staticservice/pom.xml" />
+        <option value="$PROJECT_DIR$/configservice/pom.xml" />
+        <option value="$PROJECT_DIR$/discoveryservice/pom.xml" />
+        <option value="$PROJECT_DIR$/gatewayservice/pom.xml" />
+        <option value="$PROJECT_DIR$/notificationservice/pom.xml" />
+        <option value="$PROJECT_DIR$/statisticservice/pom.xml" />
+        <option value="$PROJECT_DIR$/accountservice/pom.xml" />
+        <option value="$PROJECT_DIR$/securityservice/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaservice/pom.xml" />
+        <option value="$PROJECT_DIR$/courseservice/pom.xml" />
+        <option value="$PROJECT_DIR$/UIservice/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -15,7 +15,6 @@ import com.github.datnm23.acountservice.exception.ObjectNotFoundException;
 import com.github.datnm23.acountservice.exception.PasswordNotMatchedException;
 import com.github.datnm23.acountservice.model.request.ForgotPasswordEmailRequest;
 import com.github.datnm23.acountservice.model.request.PasswordChangingRequest;
-import com.github.datnm23.acountservice.service.AccountService;
 
 import java.util.UUID;
 
