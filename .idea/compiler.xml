@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="uIservice" />
+        <module name="uiservice" />
         <module name="discoveryservice" />
         <module name="configservice" />
         <module name="accountservice" />
@@ -44,7 +44,7 @@
       <module name="notificationservice" options="-parameters" />
       <module name="securityservice" options="-parameters" />
       <module name="statisticservice" options="-parameters" />
-      <module name="uIservice" options="-parameters" />
+      <module name="uiservice" options="-parameters" />
     </option>
   </component>
 </project>
